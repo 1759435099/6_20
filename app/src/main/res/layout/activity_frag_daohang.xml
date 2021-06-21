@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.stx.xhb.xbanner.XBanner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:AutoPlayTime="3000"
+        app:pointsContainerBackground="#44aaaaaa"
+        app:pointNormal="@drawable/shape_selected"
+        app:pointSelect="@drawable/shape_selected"
+        app:pointsPosition="RIGHT"
+        app:tipTextSize="12sp"
+        app:isShowNumberIndicator="true"
+        app:isShowIndicatorOnlyOne="true"
+        app:pageChangeDuration="800"/>
+    <scut.carson_ho.searchview.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:textSizeSearch="5dp"
+        app:textColorSearch="#3F51B5"
+        app:textHintSearch="输入查询关键字"
+        app:searchBlockHeight="150"
+        app:searchBlockColor="#ffffff"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_daohang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
